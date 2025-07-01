@@ -1,6 +1,6 @@
 import React from "react";
 
-// reactstrap componentss
+// reactstrap components
 // import {
 // } from "reactstrap";
 
