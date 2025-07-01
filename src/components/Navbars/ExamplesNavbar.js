@@ -119,53 +119,13 @@ function ExamplesNavbar() {
           >
             <Nav navbar>
               <NavItem>
-                <NavLink to="/index" tag={Link}>
-                  Back to Kit
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/creativetimofficial/now-ui-kit-react/issues?ref=creativetim">
-                  Have an issue?
-                </NavLink>
-              </NavItem>
-              <NavItem>
                 <NavLink
-                  href="https://twitter.com/CreativeTim?ref=creativetim"
-                  target="_blank"
-                  id="twitter-tooltip"
+                  href="#pablo"
+                  onClick={(e) => e.preventDefault()}
                 >
-                  <i className="fab fa-twitter"></i>
-                  <p className="d-lg-none d-xl-none">Twitter</p>
+                  <i className="now-ui-icons arrows-1_cloud-download-93"></i>
+                  <p>Download</p>
                 </NavLink>
-                <UncontrolledTooltip target="#twitter-tooltip">
-                  Follow us on Twitter
-                </UncontrolledTooltip>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href="https://www.facebook.com/CreativeTim?ref=creativetim"
-                  target="_blank"
-                  id="facebook-tooltip"
-                >
-                  <i className="fab fa-facebook-square"></i>
-                  <p className="d-lg-none d-xl-none">Facebook</p>
-                </NavLink>
-                <UncontrolledTooltip target="#facebook-tooltip">
-                  Like us on Facebook
-                </UncontrolledTooltip>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
-                  target="_blank"
-                  id="instagram-tooltip"
-                >
-                  <i className="fab fa-instagram"></i>
-                  <p className="d-lg-none d-xl-none">Instagram</p>
-                </NavLink>
-                <UncontrolledTooltip target="#instagram-tooltip">
-                  Follow us on Instagram
-                </UncontrolledTooltip>
               </NavItem>
             </Nav>
           </Collapse>

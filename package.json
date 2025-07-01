@@ -6,12 +6,13 @@
   "dependencies": {
     "ajv": "^8.17.1",
     "ajv-keywords": "^5.1.0",
+    "gh-pages": "^6.3.0",
     "moment": "2.29.4",
     "nouislider": "15.4.0",
-    "react": ">=16.8.0",
+    "react": "17.0.2",
     "react-bootstrap-switch": "15.5.3",
     "react-datetime": "3.2.0",
-    "react-dom": ">=16.8.0",
+    "react-dom": "17.0.2",
     "react-router-dom": "6.11.1",
     "react-scripts": "5.0.1",
     "reactstrap": "8.10.0",
@@ -24,7 +25,9 @@
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
     "compile-sass": "sass src/assets/scss/now-ui-kit.scss src/assets/css/now-ui-kit.css",
-    "minify-sass": "sass src/assets/scss/now-ui-kit.scss src/assets/css/now-ui-kit.min.css --style compressed"
+    "minify-sass": "sass src/assets/scss/now-ui-kit.scss src/assets/css/now-ui-kit.min.css --style compressed",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -42,8 +45,8 @@
     ]
   },
   "peerDependencies": {
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0"
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
   "optionalDependencies": {
     "@babel/core": "7.18.9",
@@ -53,8 +56,5 @@
     "svgo": "3.0.2",
     "fsevents": "2.3.2",
     "chokidar": "3.5.3"
-  },
-  "devDependencies": {
-    "gh-pages": "^6.3.0"
   }
 }

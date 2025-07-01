@@ -16,7 +16,7 @@
 
 */
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
 // styles for this kit
@@ -31,9 +31,7 @@ import LoginPage from "views/examples/LoginPage.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(
+ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/index" element={<Index />} />
@@ -41,8 +39,8 @@ root.render(
       <Route path="/landing-page" element={<LandingPage />} />
       <Route path="/profile-page" element={<ProfilePage />} />
       <Route path="/login-page" element={<LoginPage />} />
-
       <Route path="*" element={<Navigate to="/index" replace />} />
     </Routes>
-  </BrowserRouter>
+  </BrowserRouter>,
+  document.getElementById("root")
 );
